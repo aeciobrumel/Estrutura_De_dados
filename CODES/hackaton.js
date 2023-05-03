@@ -7,7 +7,7 @@
 const prompt = require("prompt-read")
 
 const persons = [
-    { id: 2, nome: "Friedrich Gauss", idade: 31 },
+    { id: 2, nome: "Friedrich Gauss", idade: 33 },
     { id: 1, nome: "Isaac Newton", idade: 28 },
     { id: 3, nome: "Marie Curie", idade: 29 },
     { id: 4, nome: "Hedy Lamarr", idade: 23 },
