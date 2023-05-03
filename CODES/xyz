@@ -1,0 +1,5 @@
+const text = 'oi'
+
+const log = () => {
+    console.log(text)
+}
