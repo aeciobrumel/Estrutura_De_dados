@@ -10,7 +10,7 @@ const persons = [
     { id: 2, nome: "Friedrich Gauss", idade: 33 },
     { id: 1, nome: "Isaac Newton", idade: 28 },
     { id: 3, nome: "Marie Curie", idade: 29 },
-    { id: 4, nome: "Hedy Lamarr", idade: 23 },
+    { id: 4, nome: "Hedy Lamarr", idade: 22 },
     { id: 5, nome: "Albert Einstein", idade: 39 },
     { id: 7, nome: "Galileu Galilei", idade: 25 },
     { id: 10, nome: "James Clerk Maxwell", idade: 25 },
