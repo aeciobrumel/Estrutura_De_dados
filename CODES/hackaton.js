@@ -36,7 +36,7 @@ var op = prompt("insira aqui: ",'number')
 
 
 function transforma_heap(qtde){
-  var i, pai, aux;
+  var i;
   // Transforme o array em uma heap
   for (i = Math.floor(qtde/ 2)-1 ; i >= 0; i--) {
     heap(i, qtde);
