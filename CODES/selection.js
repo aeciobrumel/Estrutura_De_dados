@@ -2,7 +2,7 @@
 const prompt = require('prompt-read')
 
 
-x=[5,4,2,8,3,7,4]
+var x=[5,8,2,6,1,9]
 console.log(x)
 
 
