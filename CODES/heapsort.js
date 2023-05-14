@@ -29,7 +29,8 @@ function transforma_heap(qtde){
 heap(i, qtde): Esta função recebe como parâmetros a posição atual (i) 
 e a quantidade de elementos que devem ser ordenados (qtde).
  A função verifica se o elemento da posição i é menor que seus filhos (se houver). 
- Se for o caso, o elemento é trocado com o maior filho e a função heap é chamada novamente para a nova posição do elemento.
+ Se for o caso, o elemento é trocado com o maior filho e a função heap é chamada
+  novamente para a nova posição do elemento.
 
 */
 
