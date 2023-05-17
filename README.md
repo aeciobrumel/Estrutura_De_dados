@@ -1,2 +1,2 @@
 # Estrutura_De_dados
- repositio de estruturas de dados curso ads
+ repositório de estruturas de dados curso ads
