@@ -14,5 +14,5 @@ class Aluno{
 var aluno=new Aluno()
 aluno.numero=1
 aluno.nome="Aecio"
-aluno.a1=9
+aluno.a1= 9
 console.log(aluno)
