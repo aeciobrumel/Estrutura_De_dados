@@ -4,7 +4,7 @@ class Aluno{
         this.nome=nome
         this.notas=new Notas()
     }
-} 
+} //declaração classe notas
 class Notas{
     constructor(){
         this.a1=0
@@ -12,7 +12,7 @@ class Notas{
         this.af=null
         
     }
-    media() {
+    media() { //função que calcula media
         if(this.af==null){
        return this.a1+this.a2
         }else{
@@ -20,11 +20,11 @@ class Notas{
         }
 
     }
-    resultado(){
+    resultado(){ //função que calcula resultado
         return this.media()>=6?"Aprovado":"Reprovado";
     }
 
-    //teste
+    //teste valida nota
     check(nota){
         if(nota>5)return 5
         if(nota<0)return 0
@@ -58,7 +58,7 @@ new Aluno(4,"Jonas")
 */
 
 
-//obj alunos
+//declaração do obj aluno
 
 var aluno  =new Aluno(1,"elmario")
 aluno.notas.setA1(4)
