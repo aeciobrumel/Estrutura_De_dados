@@ -14,41 +14,41 @@ function message(msg, timems) {
     } while (currentDate - date < ms);
     }
 
-//Queue
-class Queue {
+//CLASSE STACK
+class Stack {
     constructor() {
-    this.count = 0
-    this.lowestCount = 0
-    this.items = {}
-    }
-        enqueue(element) {
-        this.items[this.count] = element
-        this.count++
+        this.count = 0
+        this.items = {}
         }
-        dequeue() {
-            if (this.isEmpty()) {
-                return undefined
-                }
-                const result = this.items[this.lowestCount]
-                delete this.items[this.lowestCount]
-                this.lowestCount++
-          return result
-        }
+            push(element) {
+            this.items[this.count] = element
+            this.count++
+            }
+            pop() {
+                if (this.isEmpty()) {
+                    return undefined
+                    }
+                    const result = this.items[this.count]
+                    delete this.items[this.count]
+                    this.count--
+              return result
+            }
         peek() {
                     if (this.isEmpty()) {
                     return undefined
                     }
-                    return this.items[this.lowestCount]
+                    return this.items[this.count-1]
+
         }
         isEmpty () {
                         return this.size() === 0
         }
         size() {
-                return this.count - this.lowestCount
+                return this.count
         }
         toString () {
         let arr = []
-        for(let i = this.lowestCount; i < this.count; i++) {
+        for(let i = 0; i < this.count; i++) {
             arr.push(this.items[i])
             }
             return arr.toString()
@@ -58,16 +58,17 @@ class Queue {
 
 
     // MAIN
-var queue = new Queue()
+    var stack = new Stack();
 // Menu
 do {
 console.clear()
-console.log("FILA FIFO")
+console.log("FILA FILO")
 console.log("=============================\n")
-console.log(" FILA: [" + queue.toString() + "]\n")
+console.log(" FILA: [" + stack.toString() + "]\n")
 console.log("** OPERAÇÕES **")
 console.log("1 - Inserir")
 console.log("2 - Remover")
+console.log("3 - Ver ultimo item")
 console.log("5 - Tamanho")
 console.log("7 - Limpar")
 console.log("9 - Sair")
@@ -77,22 +78,26 @@ var option = prompt("Opção: ", "number")
 switch(option) {
     case 1:
         var element = prompt("Elemento: ")
-        queue.enqueue(element)
+        stack.push(element)
         message("Elemento inserido!!!")
         break
     case 2:
-        var element = queue.dequeue()
+        var n =stack.peek() 
+        var element = stack.pop()
         if ( element !== undefined) {
-        message("Elemento " + element + " removido!")
+        message("Elemento " + n + " removido!")
         } else {
         message("Fila está vazia!")
         }
         break
+    case 3:
+        message("o numero do topo da pilha é " + stack.peek() )
+        break
     case 5:
-        message("Existem " + queue.size() + " elementos.")
+        message("Existem " + stack.size() + " elementos.")
         break
     case 7:
-        queue = new Queue()
+        stack = new Stack()
         break
     case 9:
         console.clear()
