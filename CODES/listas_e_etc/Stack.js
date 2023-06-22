@@ -17,14 +17,14 @@ function message(msg, timems) {
 //CLASSE STACK
 class Stack {
     constructor() {
-        this.count = 0
+        this.count = 0//contador ou o topo
         this.items = {}
         }
             push(element) {
-            this.items[this.count] = element
-            this.count++
+            this.items[this.count] = element // adicionamos um elemento relacionando com count
+            this.count++//count recebe mais
             }
-            pop() {
+            pop() {//deletamos o ultimo numero adicionado
                 if (this.isEmpty()) {
                     return undefined
                     }
@@ -37,7 +37,7 @@ class Stack {
                     if (this.isEmpty()) {
                     return undefined
                     }
-                    return this.items[this.count-1]
+                    return this.items[this.count-1] //mostramos o ultimo numero da pilha
 
         }
         isEmpty () {
