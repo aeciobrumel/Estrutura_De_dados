@@ -152,11 +152,11 @@ class BinarySearchTree {
     }
 }
 
-//Node
-class Node {
-    constructor(key) {
-        this.key = key
-        this.left = null
+//Node //criação da arvore
+class Node { //classe nó
+    constructor(key) { //construtor recebe chave ou dado
+        this.key = key //chave ou dado
+        this.left = null // filho direito e esquerdo
         this.right = null
     }
 }
